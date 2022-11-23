@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So Sweet &mdash Торти на замовлення</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/accordion.js"></script>
+    <script defer src="js/map.js"></script>
+    <script defer src="js/sticky.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script
+      defer
+      src="googlemapscript"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-main-nav-box">
+        <a href="#">
+          <img class="logo" alt="SoSweet logo" src="img/sosweet-logo.png" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+               <a href="#torty" class="main-nav-link">Торти</a>
+            </li>
+            <li>
+              <a href="#cookies" class="main-nav-link">Тістечка</a>
+            </li>
+            <li>
+              <a href="#footer" class="main-nav-link">Контакт</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <img class="icon-mobile-nav" name="menu-outline" src="img/icon-mobile-nav-open.svg" alt="mobile menu opening icon"></img>
+          <img class="icon-mobile-nav" name="close-outline" src="img/icon-mobile-nav-close.svg" alt="mobile menu closing icon"></img>
+        </button>
+      </div>
+      <div class="contact-box">
+        <div class="insta-box">
+          <a href="https://www.instagram.com/sosweet_zolotonosha/">
+            <img class="insta-icon" alt="insta-icon" src="img/insta-icon.svg" />
+          </a>
+        </div>
+        <div class="viber-box">
+          <a href="https://msng.link/o/?380674594180=vi">
+            <img class="viber-icon" alt="viber-icon" src="img/viber-icon.svg" />
+          </a>
+        </div>
+      </div>
+      <a href="#" class="to-the-top">
+        <img alt="button scrolling to the top" src="img/to-the-top.svg"/>
+      </a>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Авторські торти і тістечка</h1>
+            <p class="hero-description">
+              Мої десерти повинні зіграти роль у тому, щоб кожен день був
+              особливим, як для вас, так і для тих, кого ви любите!
+            </p>
+            <p class="hero-description">
+              Я зосереджyюсь на створенні натуральних і барвистих тортів, які
+              мають такий самий смак, як і вигляд; сам торт – це ідеальний
+              баланс між шарами вологих бісквітів, смачного крему та інших
+              текстур.
+            </p>
+            <a href="#torty" class="btn btn-hero">Перейти до меню</a>
+          </div>
+          <div class="hero-slider-box">
+            <div class="slider">
+              <div class="slide slide--0">
+                <img
+                  src="img/tort-wide-gallery4.png"
+                  alt="tort-1"
+                  class="slider-image"
+                />
+              </div>
+              <div class="slide slide--1">
+                <img
+                  src="img/tort-wide-gallery2.png"
+                  alt="tort-2"
+                  class="slider-image"
+                />
+              </div>
+              <div class="slide slide--2">
+                <img
+                  src="img/tort-wide-gallery3.png"
+                  alt="tort-3"
+                  class="slider-image"
+                />
+              </div>
+              <div class="slide slide--3">
+                <img
+                  src="img/tort-wide-gallery1.png"
+                  alt="tort-4"
+                  class="slider-image"
+                />
+              </div>
+            </div>
+            <button class="btn-slider btn-slider--left">
+              <img src="img/arrow-left.svg" alt="left arrow" />
+            </button>
+            <button class="btn-slider btn-slider--right">
+              <img src="img/arrow-right.svg" alt="right arrow" />
+            </button>
+            <div class="dots">
+              <!-- uzywamy &nbsp aby nie pozostawiac guzika calkiem pustym, co zwykle nie jest dobrym pomyslem -->
+              <button class="dot dot--fill">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info-section">
+        <div class="container info-container">
+          <div class="info-box">
+            <img class="info-icon" src="img/cake-icon.svg" alt="cake icon" />
+            <span class="info-text">Мінімальна вага торта 2,5 кг</span>
+          </div>
+          <div class="info-box right">
+            <img class="info-icon" src="img/car-icon.svg" alt="car icon" />
+            <span class="info-text">Можлива доставка</span>
+          </div>
+          <div class="info-box">
+            <img class="info-icon" src="img/heart-icon.svg" alt="heart icon" />
+            <span class="info-text">Все ручної роботи</span>
+          </div>
+          <div class="info-box right leaf">
+            <img class="info-icon" src="img/leaf-icon.svg" alt="leaf icon" />
+            <span class="info-text">Тільки натуральні складники</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="torty-section" id="torty">
+        <div class="container torty-container">
+          <h2 class="heading-secondary">Торти</h2>
+          <div class="wrapper">
+            <div class="gallery">
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/gallery1.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Грильяжний</h3>
+                  <p class="card-description">
+                    Вершково-карамельний крем, горіхова грильяжна прослойка,
+                    шоколадний бісквіт
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/gallery2.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Баунті</h3>
+                  <p class="card-description">Ванільний мус, кокос, бісквіт</p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/gallery3.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Фереророше</h3>
+                  <p class="card-description">
+                    Вершково-карамельний крем, шоколадний бісквіт, фундук
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/gallery4.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Шварцвальд</h3>
+                  <p class="card-description">
+                    Шоколадний бісквіт, вершково-карамельний крем, п’яна вишня
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/gallery5.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Рафаелло</h3>
+                  <p class="card-description">
+                    Мигдальний бісквіт, вершково-карамельний крем з кокосом
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/gallery6.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Снікерс</h3>
+                  <p class="card-description">
+                    Шоколадний бісквіт, вершково-карамельний крем з шоколадом,
+                    арахіс, карамель
+                  </p>
+                </div>
+              </div>
+              <!-- Hidden -->
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/golden-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Золотий ключик</h3>
+                  <p class="card-description">
+                    Вершково-карамельний крем, ванільний бісквіт, ганаш
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/madagarskar-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Мадагаскар</h3>
+                  <p class="card-description">Брауні, кокосовий мус, 
+                    шоколадний мус</p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/mousechoko-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Мусовий шоколадний</h3>
+                  <p class="card-description">
+                    Шоколадний мус, п’яна вишня, шоколадний бісквіт
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/mouseberry-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Мусовий ягідний</h3>
+                  <p class="card-description">
+                    Ягідний мус, п’яна вишня, шоколадний бісквіт</p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/napoleon-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Наполеон</h3>
+                  <p class="card-description">
+                    Листкові коржі, голандський ванільний крем
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/sparta-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Спартак</h3>
+                  <p class="card-description">
+                    Шоколадно-медові коржі, крем голландез
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/rozetta-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Чізкейк</h3>
+                  <p class="card-description">
+                    Пісочне тісто, вершково-сирний крем, ягоди або шоколад
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/chocolate-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Шоколадний</h3>
+                  <p class="card-description">
+                    Шоколадний бісквіт, крем на основі чорного шоколаду
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/nequik-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Київський</h3>
+                  <p class="card-description">
+                    шоколадний бісквіт, вершково-карамельний крем, шоколад, київська прослойка
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/morkownij-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Морковний</h3>
+                  <p class="card-description">
+                    морковний бісквіт з грецьким горіхом, крем чіз
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-accordion btn-torty">
+              показати всі
+              <img
+                class="icon-accordion"
+                src="img/down-icon.svg"
+                alt="icon down"
+              />
+            </button>
+          </div>
+        </section>
+
+        <section class="section-cookies" id="cookies">
+        <div class="container cookies-container">
+          <h2 class="heading-secondary">Тістечка та десерти</h2>
+          <div class="wrapper">
+            <div class="gallery">
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/cookie1.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Капкейки</h3>
+                  <p class="card-description">
+                    Шоколад, карамель, вершки, ганаш
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/cookie2.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Макаруни</h3>
+                  <p class="card-description">Мигдальне печиво з начинкою</p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/cookie3.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Сигара</h3>
+                  <p class="card-description">
+                    Шоколад чорний, лікер бейліс, кава, какао масло
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/cookie4.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Трайфл</h3>
+                  <p class="card-description">
+                    Шоколадний бісквіт, карамель, крем, п’яна вишня, ганаш
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/cookie5.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Зефір</h3>
+                  <p class="card-description">Ягідне пюре, агарагар</p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-image"
+                  src="img/cookie6.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Кокос</h3>
+                  <p class="card-description">
+                    Шоколад, кокосовий мус, мармелад манго маракуя
+                  </p>
+                </div>
+              </div>
+              <!-- Hidden -->
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/mini-tort.jpg"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Міні тортики</h3>
+                  <p class="card-description">
+                    шоколадний бісквіт, вершки, карамель, шоколад
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/mousecake-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Мусові тістечка</h3>
+                  <p class="card-description">Карамель, дзеркальна шоколадна глазурь, ягоди або шоколад</p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/ekler-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Еклери</h3>
+                  <p class="card-description">
+                    Заварне тістечко з голандським кремом, карамель
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/pawlowa-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Павлова</h3>
+                  <p class="card-description">
+                    Повітрянне безе з хрусткою скоринкою і м’якою серединкою, ягоди
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/kejklolis-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Кейк-попси</h3>
+                  <p class="card-description">
+                    Бісквітна основа, шоколад
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/eskimo-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Ескімо</h3>
+                  <p class="card-description">
+                    Шоколад білий або чорний, бісквіт, карамель, вершкове масло, горішки
+                  </p>
+                </div>
+              </div>
+              <div class="card card-accordion card-hidden">
+                <img
+                  class="card-image"
+                  src="img/snikers-min.png"
+                  alt="tort image"
+                />
+                <div class="card-description-box">
+                  <h3 class="heading-tertiary">Снікерс</h3>
+                  <p class="card-description">
+                    Тарталетка з пісочног тіста, чорний шоколад, арахіс, карамель
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-accordion btn-cookies">
+              показати всі
+              <img
+                class="icon-accordion"
+                src="img/down-icon.svg"
+                alt="icon down"
+              />
+            </button>
+          </div>
+          <h2 class="heading-secondary">
+            Слідкуйте за мною в Instagram @sosweet_zolotonosha
+          </h2>
+        </section>
+      </section>
+
+      <section class="gallery-wide-section">
+        <div class="gallery-wide">
+          <div class="gallery-wide-item">
+            <img
+              src="img/tort-wide-gallery1.png"
+              class="gallery-wide-img"
+              alt="tort image"
+            />
+          </div>
+          <div class="gallery-wide-item">
+            <img
+              src="img/tort-wide-gallery2.png"
+              class="gallery-wide-img"
+              alt="tort image"
+            />
+          </div>
+          <div class="gallery-wide-item">
+            <img
+              src="img/tort-wide-gallery3.png"
+              class="gallery-wide-img"
+              alt="tort image"
+            />
+          </div>
+          <div class="gallery-wide-item">
+            <img
+              src="img/tort-wide-gallery4.png"
+              class="gallery-wide-img"
+              alt="tort image"
+            />
+          </div>
+          <div class="gallery-wide-item">
+            <img
+              src="img/tort-wide-gallery5.png"
+              class="gallery-wide-img"
+              alt="tort image"
+            />
+          </div>
+          <div class="gallery-wide-item">
+            <img
+              src="img/tort-wide-gallery6.png"
+              class="gallery-wide-img"
+              alt="tort image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container footer-container">
+        <div class="footer-contact-box">
+          <h2 class="heading-secondary">Контакт</h2>
+          <p class="footer-contact-text">Тел.: +380 674 594 180</p>
+          <p class="footer-contact-text">c. Нова Дмитрівка, вул. Садова 35</p>
+          <div class="social-icons-box">
+            <a href="https://www.instagram.com/sosweet_zolotonosha/">
+            <img
+              class="social-icon-contact"
+              src="img/insta-icon.svg"
+              alt="instagram icon"
+            />
+          </a>
+          <a href="https://www.facebook.com/tortyzolotonosha">
+            <img
+              class="social-icon-contact"
+              src="img/facebook-icon.svg"
+              alt="facebook icon"
+            />
+          </a>
+          <a href="https://msng.link/o/?380674594180=vi">
+            <img
+              class="social-icon-contact"
+              src="img/viber-icon.svg"
+              alt="viber icon"
+            />
+          </a>
+          </div>
+        </div>
+        <div class="footer-map-box"></div>
+      </div>
+    </footer>
+  </body>
+</html>

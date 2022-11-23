@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #292929;
+
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 20rem;
+}
+
+.heading-primary {
+  font-weight: 600;
+  font-size: 8rem;
+  line-height: 9.5rem;
+  margin-bottom: 5.2rem;
+}
+
+.heading-secondary {
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 7rem;
+  margin-bottom: 6rem;
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background: none;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2.6rem 7.2rem;
+  border-radius: 6px;
+  border: 2px solid #292929;
+  cursor: pointer;
+
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+
+  font-size: 2.1rem;
+  letter-spacing: 4.5px;
+  color: #292929;
+
+  margin-top: 8rem;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
